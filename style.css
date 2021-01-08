@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 :root{
-    --color-primary: #00CFFF;
+    --color-primary: #351eff;
+    --color-primary-dark: #05092C;
     --color-secondary: #FFD200;
     --grey-dark: #2F2E41;
     --grey-light: #CCCCCC;
@@ -10,19 +12,21 @@
 body{
     left: 0;
     top:0;
-    width: 100%;;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 nav{
     width: 100%;
     height: 10vh;
-    color: var(--grey-dark);
+    color: white;
     margin: 0px;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     box-shadow:  20px 20px 60px #d9d9d9,
     -20px -20px 60px #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 nav div {
@@ -43,6 +47,35 @@ nav ul li{
 }
 nav a{
     text-decoration: none;
-    color: var(--grey-dark);
+    color: white;
 }
 
+header{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: url(./bgtech.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header div{
+    background-color: rgba(255, 255, 255, 0.7);;
+    width: 70vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  10px 10px 30px #1b007e,
+                 -10px -10px 30px #351eff;
+     flex-direction: column;
+    color: var(--color-primary-dark);
+    text-align: center;
+}
+
+header h1{
+    font-size: 3.5rem;
+    margin: 2rem;
+}
