@@ -94,6 +94,7 @@ header div:hover{
 header h1{
     font-size: 3.5rem;
     margin: 2rem;
+    animation: slidedown 1s ease-in;
 }
 
 main{
@@ -118,6 +119,7 @@ main .container{
     flex-wrap: wrap;
     text-align: center;
     width: 850px;
+    animation: slidein 1s ease-in;
 }
 .card{
     border: 2px solid var(--color-primary-dark);
@@ -136,15 +138,15 @@ main .container{
 
 }
 .card h3{
-    margin: 15px 5px;
+    margin: 15px 10px;
 }
 .card p{
-    margin: 15px 5px;
+    margin: 15px 10px;
     height: 100px;
 }
 .card a{
     display: block;
-    margin: 15px 5px;
+    margin: 15px 10px;
     border-radius: 5px;
     padding: 5px;
     background-color: var(--color-primary-dark);
@@ -184,5 +186,24 @@ color: white;
   
     to {
       opacity: 100%;
+    }
+}
+@keyframes slidein {
+    from {
+      margin-right: 100%;
+    }
+  
+    to {
+      margin-right: 0%;   
+    }
+}
+
+@keyframes slidedown {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 25%;  
     }
 }
